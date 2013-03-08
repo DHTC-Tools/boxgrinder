@@ -130,7 +130,7 @@ files:
     - "condor/condor_config"
     - "condor/config.d/10-base.conf"
     - "condor/config.d/20-daemon.conf"
-    - "condor/config.d/30-flocking.conf"
+    - "condor/config.d/30-network.conf"
     - "condor/config.d/50-classads.conf"
     - "inittab"
     - "ganglia/gmond.conf"
