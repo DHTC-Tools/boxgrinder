@@ -1,0 +1,4 @@
+CVMFS_REPOSITORIES=oasis.opensciencegrid.org
+CVMFS_HTTP_PROXY="squid.osgconnect.net;DIRECT"
+CVMFS_CACHE_BASE=/home/cvmfs
+CVMFS_QUOTA_LIMIT=5120
