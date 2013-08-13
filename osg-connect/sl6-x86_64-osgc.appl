@@ -1,7 +1,7 @@
 name: sl6-x86_64-osgc
 summary: Base configuration for a virtualized OSG Connect worker
 version: 1
-release: 1
+release: 2
 os:
   name: sl
   version: 6
@@ -34,7 +34,6 @@ packages:
   - tcsh
   - git
   - agrep
-  - anacron
   - automake
   - blas
   - busybox
@@ -45,11 +44,6 @@ packages:
   - cvmfs-keys
   - cvmfs-init-scripts
   - cvs
-  - dcap
-  - dcap-libs
-  - xrootd-client
-  - xrootd-fuse
-  - xrootd-libs
   - vim-common
   - vim-enhanced
   - htop
@@ -129,6 +123,8 @@ files:
     - "cvmfs/config.d/atlas-condb.cern.ch.local"
     - "cvmfs/config.d/atlas-nightlies.cern.ch.local"
     - "cvmfs/config.d/atlas-nightlies.cern.ch.conf"
+    - "cvmfs/config.d/oasis.opensciencegrid.org.conf"
+    - "cvmfs/keys/oasis.opensciencegrid.org.pub"
     - "auto.master"
     - "fuse.conf"
     - "init.d/cloudconfig"
