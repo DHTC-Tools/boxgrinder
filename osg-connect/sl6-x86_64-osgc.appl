@@ -1,7 +1,7 @@
 name: sl6-x86_64-osgc
 summary: Base configuration for a virtualized OSG Connect worker
 version: 1
-release: 2
+release: 4
 os:
   name: sl
   version: 6
@@ -129,6 +129,7 @@ files:
     - "fuse.conf"
     - "init.d/cloudconfig"
     - "sysconfig/cloudconfig"
+    - "rc.local.d/condor_boot.sh"
 
 post:
   base:
