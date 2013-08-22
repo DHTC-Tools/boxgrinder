@@ -1,7 +1,7 @@
 name: sl6-x86_64-osgc
 summary: Base configuration for a virtualized OSG Connect worker
 version: 1
-release: 5
+release: 9
 os:
   name: sl
   version: 6
@@ -130,7 +130,7 @@ files:
     - "init.d/cloudconfig"
     - "sysconfig/cloudconfig"
     - "rc.local.d/condor_boot.sh"
-    - "rc.local"
+    - "rc.d/rc.local"
 
 post:
   base:
@@ -147,3 +147,4 @@ post:
     - "/usr/sbin/useradd -m osg"
     - "chmod -R +x /etc/rc.local.d"
     - "chown -R root:root /etc/rc.local.d"  
+    - "chmod +x /etc/rc.d/rc.local"
